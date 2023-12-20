@@ -1,0 +1,136 @@
+body {
+  background-color: beige;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+:root {
+  --white_color:#ffffff;
+  --button_blue: #314562;
+  --grey_color:#D6D6D6;
+  --link_blue:#2A64F6;
+  --trans:transparent;
+}
+
+.light {
+  color: var(--white_color);
+}
+
+.dark {
+  color: var(--button_blue);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 20px;
+}
+.main .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  height: calc(100vh - 40px);
+  background-color: var(--white_color);
+  border-radius: 20px;
+  position: relative;
+}
+.main .form .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 130px 0;
+}
+.main .form .logo img {
+  height: 50%;
+}
+.main .form h1 {
+  max-width: 450px;
+  text-align: center;
+  margin: 0;
+}
+.main .form h3 {
+  margin: 0;
+}
+.main .form p {
+  text-align: center;
+  max-width: 350px;
+  font-weight: 500;
+  margin-top: 40px;
+  font-size: 13px;
+}
+.main .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.main .form form input {
+  border: 1px solid var(--grey_color);
+  padding: 10px 0;
+  border-radius: 12px;
+  width: 50%;
+  text-align: center;
+}
+.main .form form button {
+  background-color: var(--button_blue);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: var(--white_color);
+  border: none;
+  width: 50%;
+}
+.main .form .add_new {
+  position: absolute;
+  bottom: 10px;
+  background-color: var(--trans);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: var(--link_blue);
+  border: none;
+}
+.main .colors_palette {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .colors_palette ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.main .colors_palette ul li {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  height: 100px;
+  width: 140px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 12px;
+}
+.main .colors_palette ul li span:first-child {
+  text-transform: uppercase;
+}
+.main .colors_palette ul li:hover {
+  font-size: 15px;
+}
+.main .colors_palette ul .box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=coolpare.css.map */
