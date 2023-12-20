@@ -133,4 +133,10 @@ body {
   align-content: center;
   justify-content: center;
   text-align: center;
+}
+
+@media all and (max-width: 500px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=coolpare.css.map */
