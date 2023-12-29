@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Colpare</title>
 </head>
-<body>
+<body class="bgcol">
     <div class="main">
         <div class="form">
             <div class="logo">
@@ -21,9 +21,9 @@
                 compare here.</h1>
                 <h3>With just one click</h3>
                 <p>Create the perfect palette or get inspired by thousands of  beautiful color scheme.</p>
-                <form action="submit">
-                    <input type="text" placeholder="Enter required color code here."/>
-                    <button>Compare the color</button>
+                <form>
+                    <input class="inputcolor" type="text" placeholder="Enter required color code here." onkeyup="colorback(this.className)" />
+                    <!-- <button>Compare the color</button> -->
                 </form>
                 <button class="add_new">Add this color to library</button>
 
@@ -253,5 +253,6 @@
             </ul>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
